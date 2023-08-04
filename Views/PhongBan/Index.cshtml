@@ -1,0 +1,41 @@
+@model IEnumerable<LeThanhNam_03.Models.PhongBan>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Phòng Ban</h1>
+
+<p>
+    <a asp-action="Create">Tạo mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaPhongBan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenPhongBan)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaPhongBan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenPhongBan)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaPhongBan">Chỉnh Sửa</a> |
+                <a asp-action="Details" asp-route-id="@item.MaPhongBan">Chi Tiết</a> |
+                <a asp-action="Delete" asp-route-id="@item.MaPhongBan">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

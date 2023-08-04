@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\LeThanhNam_03\\LeThanhNam_03.csproj": {}
+    "C:\\LeThanhNam_03\\LeThanhNam_03.csproj": {}
   },
   "projects": {
-    "c:\\LeThanhNam_03\\LeThanhNam_03.csproj": {
+    "C:\\LeThanhNam_03\\LeThanhNam_03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\LeThanhNam_03\\LeThanhNam_03.csproj",
+        "projectUniqueName": "C:\\LeThanhNam_03\\LeThanhNam_03.csproj",
         "projectName": "LeThanhNam_03",
-        "projectPath": "c:\\LeThanhNam_03\\LeThanhNam_03.csproj",
+        "projectPath": "C:\\LeThanhNam_03\\LeThanhNam_03.csproj",
         "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
-        "outputPath": "c:\\LeThanhNam_03\\obj\\",
+        "outputPath": "C:\\LeThanhNam_03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\quang\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,32 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,0 +1,27 @@
+@model LeThanhNam_03.Models.PhongBan
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Xóa Dữ Liệu</h1>
+
+<h3>Bạn có chắc chắn muốn xóa không?</h3>
+<div>
+    <h4>Phòng Ban</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaPhongBan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenPhongBan)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="MaPhongBan" />
+        <input type="submit" value="Xóa" class="btn btn-danger" /> |
+        <a asp-action="Index">Quay lại</a>
+    </form>
+</div>
