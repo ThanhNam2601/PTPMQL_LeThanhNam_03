@@ -15,5 +15,7 @@ namespace LeThanhNam_03.Data
         }
 
         public DbSet<PhongBan> PhongBan { get; set; } = default!;
+
+        public DbSet<LeThanhNam_03.Models.NhanVien> NhanVien { get; set; } = default!;
     }
 }

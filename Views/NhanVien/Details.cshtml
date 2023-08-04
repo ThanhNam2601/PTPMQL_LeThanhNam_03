@@ -1,0 +1,30 @@
+@model LeThanhNam_03.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Thông tin chi tiết</h1>
+
+<div>
+    <h4>Nhân Viên</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaNhanVien)
+        </dt>
+        <dd class = "col-sm-4">
+            @Html.DisplayFor(model => model.TenNhanvien)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaPhongBan)
+        </dt>
+        <dd class = "col-sm-2">
+            @Html.DisplayFor(model => model.MaPhongBan)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.MaNhanVien">Chỉnh sửa</a> |
+    <a asp-action="Index">Quay lại</a>
+</div>
